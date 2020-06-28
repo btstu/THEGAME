@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap');
+
+body{
+    background-color: #dde1e7;
+}
+
+.container{
+    border: black 1 none ;
+    background-color: #dde1e7;
+    animation: shake 0s normal forwards;
+   
+}
+
+h2 {
+    margin: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.panel{
+    text-align: center;
+    float: right;
+    width: 16%;
+    background-color:  #dde1e7;
+    height: 500px;
+
+ 
+}
+p {
+    display: inline-block;
+    margin-top: 0px;
+    font-weight: 700;
+}
+h5 {
+    display: inline-block;
+    margin-top: 0px;
+}
+.boards{
+    height: 85px;
+    margin-bottom: 8px;
+    padding-top: 10px;
+    background-color: #dde1e7;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px rgb(255, 255, 255), 3px 3px 5px rgb(33, 33, 39, .288) ;
+    
+
+}
+
+h1{
+    font-family: 'Nunito', sans-serif ;
+    font-weight:  900;
+    font-kerning: auto;
+    padding-top: 10px;
+  
+}
+
+.cmiyc{
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    background-color:rgb(188, 193, 224);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px rgb(255, 255, 255), 3px 3px 5px rgb(33, 33, 39, .288) ;
+}
+
+.countBar{
+    position: absolute;
+    width: 950px;
+    height: 7px;
+    top: 87px;
+    border-radius: 10px;
+    background:right linear-gradient(to left, rgb(194, 0, 0), rgb(241, 141, 141));
+}
+
+.barLeft{
+    position: absolute;
+    float: right;
+    background-color: #dde1e7;
+    height: 7px;
+}
+
+.box{
+    background-image: url(../assets/EARThBigspin0114.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 550px;
+    width: 950px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    border-radius: 10px;
+    animation: fade 0s forwards linear ;
+   
+}
+.targeT{
+    position: absolute;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    background-image: url(../assets/virus-4986063_960_720.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: spin 0s infinite linear ;
+    background-position: center;
+
+}
+.targeT2{
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/virus-4986063_960_720.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: spin 0s infinite linear ;
+    background-position: center;
+    display: none;
+    z-index: 4;
+    padding-left: 100px;
+
+
+}
+.circle{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: pulsanim 0.3s linear forwards;
+}
+.highscore{
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+
+}
+
+.date1{
+    bottom: 194px;
+    right: 272px;
+    border-radius: 8px;
+    padding-top: 4.5px;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    stroke: url(#pattern);
+    stroke-width: 10px;
+    background-color:rgb(188, 193, 224);
+    display: none;
+    animation: openn 0s forwards ease-out ;
+    
+}
+
+.date2{
+    bottom: 165px;
+    right: 272px;
+    border-radius: 8px;
+    padding-top: 4.5px;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    background-color:rgb(188, 193, 224);
+    display: none;
+    animation: openn 0s forwards ease-out ;
+    
+}
+.date3{
+    bottom: 138px;
+    right: 272px;
+    border-radius: 8px;
+    padding-top: 4.5px;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    background-color:rgb(188, 193, 224);
+  
+    display: none;
+    animation: openn 0s forwards ease-out ;
+    
+}
+.highscore{
+    height: 20px;
+    padding-top: 7px;
+}
+
+@keyframes colorss {
+    from {filter:hue-rotate(0deg);}
+    to {filter:hue-rotate(360deg);}
+}
+
+
+@keyframes shake {
+    0%{
+    margin-left : 120px;
+   
+}
+80%
+{
+    
+    margin-right : 130px;
+}
+100%
+{
+    margin-left : auto;
+    margin-right : auto;
+}
+}
+@keyframes pulsanim{
+    0%
+    {
+        height: 0px;
+        width: 0px;
+        opacity: 1%;
+    }
+50%{
+
+    opacity: 100%;
+}
+    80%
+    {
+        
+        height: 130px;
+        width: 130px;
+       
+    }
+
+    100%
+    {
+        
+        opacity:0%;
+        height: 150px;
+        width: 150px;
+    
+    }
+} 
+
+@keyframes openn{
+    0%
+    {
+        right: 200px;
+        opacity: 0%;
+        width: 60px;
+    }
+
+    30%
+    {
+        
+        opacity: 0%;
+        width: 60px;
+    }
+
+    99%
+    {
+        right: 272px;
+        opacity: 100%;
+        width: 90px;
+    
+    }
+}
+@keyframes close{
+    0%
+    {
+        right: 272px;
+        opacity: 100%;
+        width: 90px;
+    }
+
+    30%
+    {
+        
+        opacity: 100%;
+        width: 90px;
+    }
+
+    99%
+    {
+        right: 200px;
+        opacity: 0%;
+        width: 60px;
+       
+    }
+}
+@keyframes fade{
+    from {background-color: blanchedalmond;}
+    to {background-color: black;}
+    0%
+    {
+        background-color: blanchedalmond;
+    }
+
+    99%
+    {
+        background-color: black;
+    }
+
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@keyframes pop {
+    0%
+    {
+       width: 100px;
+       height: 100px; 
+       opacity: 1;
+    }
+
+    99%
+    {
+        width: 150px ;
+        height: 150px;
+        opacity: 0;
+    }
+
+   
+}
